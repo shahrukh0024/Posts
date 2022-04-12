@@ -1,31 +1,12 @@
-import { Component } from '@angular/core';
-// import { TPost } from './posts/type/post_type';
-
-type TPost = {
-  id: number;
-  title: string;
-  userId: number;
-  content: string;
-  likes: number;
-  hits: number;
-  categoryId: number;
-  imageUrl: string;
-};
+import { Component, OnInit } from '@angular/core';
+import { TPost } from '../type/post_type';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-posts',
+  templateUrl: './posts.component.html',
+  styleUrls: ['./posts.component.css']
 })
-export class AppComponent {
-  // title = 'products';
-  // // sub-title = 'Sub products';
-  
-  // hello(str:string)
-  // {
-  //   alert(str);
-  // }
-
+export class PostsComponent implements OnInit {
   posts: TPost[] = [
     {
       "id": 1,
@@ -228,4 +209,13 @@ export class AppComponent {
       "imageUrl": "https://i.picsum.photos/id/348/600/300.jpg"
     }
   ]
+
+  constructor() { }
+
+  ngOnInit(): void {}
+  handlePostDelete(id: number)
+  {
+    this.posts = this.posts.filter((post) => post.id !== id);
+  }
+
 }
