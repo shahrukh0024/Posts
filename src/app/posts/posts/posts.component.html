@@ -1,5 +1,4 @@
-<div class="post-container"
-        *ngFor="
+<div class="post-container" *ngFor="
         let post of posts;
         index as i;
         count as c;
@@ -7,10 +6,8 @@
         last as last;
         odd as odd;
         even as even;
-        "
-        [ngClass] ="{even:even,odd:odd,first:first}"
->
- 
-        <app-post [post] = "post"></app-post>
-   
+        " [ngClass]="{even:even,odd:odd,first:first}">
+
+        <app-post [post]="post"></app-post>
+
 </div>

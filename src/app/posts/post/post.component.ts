@@ -8,8 +8,8 @@ import { TPost } from '../type/post_type';
 })
 export class PostComponent implements OnInit {
 
-  @Input('post') post:TPost;
-  @Output('delete')postDelelte:EventEmitter<number> = new EventEmitter();
+  @Input('post') post: TPost;
+  @Output('delete') postDelelte: EventEmitter<number> = new EventEmitter();
 
   constructor() { }
 
