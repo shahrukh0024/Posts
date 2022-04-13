@@ -18,14 +18,6 @@ type TPost = {
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // title = 'products';
-  // // sub-title = 'Sub products';
-  
-  // hello(str:string)
-  // {
-  //   alert(str);
-  // }
-
   posts: TPost[] = [
     {
       "id": 1,

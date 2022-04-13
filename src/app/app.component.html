@@ -7,9 +7,7 @@
   <title>Document</title>
 </head>
 <body>
-  <!-- <h1 [innerHTML] = "title">Heading</h1> -->
-  <!-- <h3 [innerHTML] = "sub-title">Heading</h3> -->
-  <!-- <button (click) = "hello('Hello World')">Click here</button> -->
+  
 
 
   <div
@@ -25,12 +23,16 @@
     "
     [ngClass] ="{even:even,odd:odd,first:first}"
   >
-    <h2 class="post__title" >
-        {{ post.title }}
-    </h2>
+    <h2 class="post__title" >{{ post.title }}</h2>
     <p class="post__like">{{ post.likes }}</p>
     <p class="post__hit">{{ post.hits }}</p>
     <p class="post__content">{{ post.content }}</p>
   </div>
 </body>
 </html>
+
+
+
+<!-- <h1 [innerHTML] = "title">Heading</h1> -->
+<!-- <h3 [innerHTML] = "sub-title">Heading</h3> -->
+<!-- <button (click) = "hello('Hello World')">Click here</button> -->
