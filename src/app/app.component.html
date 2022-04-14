@@ -1,5 +1,5 @@
-<app-posts></app-posts>
-<form class="user-add-form">
+
+<form class="user-add-form" (ngSubmit)="handleUser($event)">
     <fieldset class="fieldset">
       <legend class="legend">Enter new user details</legend>
       <div class="input-group">
@@ -11,7 +11,7 @@
           placeholder="user name here"
           id="name"
           [(ngModel)]="name"
-        />
+        />{{name}}
       </div>
       <div class="input-group">
         <label for="age" class="input-label">user age</label>
@@ -56,3 +56,9 @@
       </div>
     </fieldset>
   </form>
+  <ul class="user-container">
+    <li class="user-info">{{name}}</li>
+    <li class="user-info"></li>
+    <li class="user-info"></li>
+    <li class="user-info"></li>
+  </ul>
