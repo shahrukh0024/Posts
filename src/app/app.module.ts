@@ -5,12 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostComponent } from './posts/post/post.component';
 import { PostsComponent } from './posts/posts/posts.component';
+import { LikedPostsComponent } from './liked-posts/liked-posts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostComponent,
     PostsComponent,
+    LikedPostsComponent,
+
     
   ],
   imports: [

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { TPost } from '../type/post_type';
+import { PostServiceService } from '../post/post-service.service';
+import { LikedPostsService } from 'src/app/liked-posts/liked-posts.service';
+
 @Component({
   selector: 'app-posts',
   templateUrl: './posts.component.html',
@@ -208,9 +211,16 @@ export class PostsComponent implements OnInit {
       "imageUrl": "https://i.picsum.photos/id/348/600/300.jpg"
     }
   ]
-  constructor() { }
+  constructor(private postService : PostServiceService,private likeService : LikedPostsService) {
+
+   }
   ngOnInit(): void { }
   handlePostDelete(id: number) {
     this.posts = this.posts.filter((post) => post.id !== id);
+  }
+
+  handlePostAdd(post : TPost)
+  {
+    this.likeService.addItem(post);
   }
 }

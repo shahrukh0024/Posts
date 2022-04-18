@@ -1,0 +1,8 @@
+<div class="liked-posts-container">
+    <button class="btn btn-primary">Show Liked Posts</button>
+    <div class="liked-posts">
+        <div class="like-post" *ngFor="let post of postItems">
+            <h3>{{post.title}} | <small>{{post.likes}}</small></h3>
+        </div>
+    </div>
+</div>
