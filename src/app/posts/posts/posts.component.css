@@ -1,0 +1,10 @@
+.post-container{
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.odd{
+    background-color: #1eedfc;
+}
