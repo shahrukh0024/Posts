@@ -56,9 +56,31 @@
       </div>
     </fieldset>
   </form>
-  <ul class="user-container">
+  <!-- <ul class="user-container">
     <li class="user-info" [value]="name">{{name}}</li>
     <li class="user-info">{{age}}</li>
     <li class="user-info">{{bio}}</li>
     <li class="user-info">{{gender}}</li>
-  </ul>
+  </ul> -->
+
+  <div class="user-outer-container">
+    <div
+    class="user-display"
+    *ngFor="
+      let user of users;
+      index as i;
+      count as c;
+      first as first;
+      last as last;
+      odd as odd;
+      even as even;
+    "
+    [ngClass] ="{even:even,odd:odd,first:first}"
+  >
+    <h2 class="user-name" >{{ user.name }}</h2>
+    <p class="user-age">{{ user.age }}</p>
+    <p class="user-bio">{{ user.bio }}</p>
+    <p [style.color]='orange' class="user-gender">{{ user.gender }}</p>
+  </div>
+  </div>
+  
