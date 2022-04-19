@@ -212,7 +212,7 @@ export class PostsComponent implements OnInit {
     }
   ]
   constructor(private postService : PostServiceService,private likeService : LikedPostsService) {
-
+    const likedPost = this.likeService.addItem
    }
   ngOnInit(): void { }
   handlePostDelete(id: number) {

@@ -1,4 +1,10 @@
-<div class="liked-container">
+<!-- <div class="liked-container">
     <app-liked-posts></app-liked-posts>
 </div>
-<app-posts></app-posts>
+<app-posts></app-posts> -->
+<menu type="toolbar" class="menubar container">
+    <li><a routerLink="/">Home</a></li>
+    <li><a routerLink="posts">Posts</a></li>
+    <li><a routerLink="liked-posts">Liked Posts</a></li>
+  </menu>
+  <router-outlet></router-outlet>
