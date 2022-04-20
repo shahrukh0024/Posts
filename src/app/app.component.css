@@ -1,4 +1,4 @@
-.user-display{
+ .user-display{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-transform: uppercase;
     text-transform: 700;
@@ -17,7 +17,14 @@
     color: purple;
 }
 
+.fieldset{
+    background-color: rgb(127, 194, 199);
+}
+.legend{
+    font-size: 2rem;
+}
 
+/*
 .user-add-form{
     display: flex;
     flex-direction: column;
@@ -27,13 +34,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.fieldset{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    background-color: rgb(117, 117, 228);
-}
+
 
 .input-group{
     display: flex;
@@ -42,7 +43,7 @@
     justify-content: center;
     column-gap: 2rem;
 }
-
+*/
 .user-outer-container{
     display: flex;
     flex-direction: row;
@@ -50,4 +51,4 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: flex-start;
-}
+} 
