@@ -210,7 +210,10 @@ export class PostsComponent implements OnInit {
   ]
   constructor() { }
   ngOnInit(): void { }
-  handlePostDelete(id: number) {
+  handlePostDelete(id : number)
+  {
+    console.log(id);
     this.posts = this.posts.filter((post) => post.id !== id);
+
   }
 }
