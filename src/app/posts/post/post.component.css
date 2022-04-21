@@ -1,0 +1,19 @@
+/* .post{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: hsl(var(--clr-accent));
+
+} */
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.post__title{
+    font-size:1.3rem;
+    font-weight: 600;
+}
