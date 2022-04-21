@@ -1,10 +1,16 @@
-.post-container{
-    display: flex;
-    flex-direction: row;
-    font-family: Arial, Helvetica, sans-serif;
+.posts{
+    padding: 3em 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em 1em;
+    background-color: hsl(var(--clr-accent));
+}
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
-
-.odd{
+/* .odd{
     background-color: #1eedfc;
-}
+} */

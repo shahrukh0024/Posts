@@ -18,3 +18,8 @@ export class LikedPostsService {
   }
 
 }
+
+//ser
+// getItems()   // :TPost[] Hard to understand this syntax
+  
+

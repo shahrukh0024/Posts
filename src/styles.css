@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
     --clr-light: 0, 0%, 100%;
-    --clr-accent: 40, 73%, 91%;
+    --clr-accent: 100, 73%, 91%;
     --clr-dark: 200, 80%, 24%;
     --clr-info: 271, 40%, 28%;
-    --clr-danger: 350, 63%, 55%;
+    --clr-danger: 360, 63%, 55%;
     --clr-success: 119, 42%, 50%;
 }
 *, *::before, *::after {

@@ -26,3 +26,7 @@ import { PostsDetailsComponent } from './Posts/posts-details/posts-details.compo
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+// ser
+// PP
+

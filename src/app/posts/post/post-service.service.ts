@@ -12,3 +12,5 @@ export class PostServiceService {
     this.post.push(postItem);
   }
 }
+
+//ser

@@ -212,7 +212,7 @@ export class PostsComponent implements OnInit {
     }
   ]
   constructor(private postService : PostServiceService,private likeService : LikedPostsService) {
-    const likedPost = this.likeService.addItem
+    const likedPost = this.likeService.addItem //new apart from ser
    }
   ngOnInit(): void { }
   handlePostDelete(id: number) {
@@ -224,3 +224,10 @@ export class PostsComponent implements OnInit {
     this.likeService.addItem(post);
   }
 }
+
+//ser
+
+//Task Ser
+//pp
+//constructor() { }
+// console.log(id);

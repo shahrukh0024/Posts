@@ -9,8 +9,8 @@ import { TPost } from '../type/post_type';
 export class PostComponent implements OnInit {
 
   @Input('post') public post: TPost;
-  @Output('delete') postDelete: EventEmitter<number> = new EventEmitter();
-  @Output() public postLiked: EventEmitter<TPost> = new EventEmitter();
+  @Output() postDelete: EventEmitter<number> = new EventEmitter();
+  @Output() postLiked: EventEmitter<TPost> = new EventEmitter(); // Task Service
   constructor() { }
 
   ngOnInit(): void {}
@@ -18,5 +18,14 @@ export class PostComponent implements OnInit {
   {
     this.postLiked.emit(this.post);
   }
+  handleDelete()
+  {
+    this.postDelete.emit(this.post.id);
+  }
 
 }
+
+//ser
+
+
+//pp
