@@ -8,7 +8,7 @@ export class LikedPostsService {
   private items : TPost[] = [];
 
   constructor() { }
-  getItems():TPost[]   // Hard to understand this syntax
+  getItems()   // :TPost[] Hard to understand this syntax
   {
     return[...this.items]
   }

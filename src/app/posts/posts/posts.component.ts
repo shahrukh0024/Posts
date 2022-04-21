@@ -219,8 +219,14 @@ export class PostsComponent implements OnInit {
     this.posts = this.posts.filter((post) => post.id !== id);
   }
 
-  handlePostAdd(post : TPost)
+  handlePostAdd(post : TPost)       //Task Ser
   {
-    this.likeService.addItem(post);
+    this.likeService.addItem(post);  
   }
+  
 }
+
+//pp
+
+//constructor() { }
+// console.log(id);
